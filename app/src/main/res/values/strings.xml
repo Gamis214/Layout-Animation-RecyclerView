@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CustomAnimation_RecyclerView</string>
+
+    <string-array name="animation_types">
+        <item>Array Item One</item>
+        <item>Array Item Two</item>
+        <item>Array Item Three</item>
+    </string-array>
+
+</resources>
