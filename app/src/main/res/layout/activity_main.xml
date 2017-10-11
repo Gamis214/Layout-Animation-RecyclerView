@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context="com.example.gamis214.customanimation_recyclerview.MainActivity">
 
     <android.support.v7.widget.Toolbar
@@ -25,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:text="RELOAD"/>
+                android:text="SHOW ON GRID"/>
 
             <Spinner
                 android:id="@+id/spinner"
@@ -41,12 +42,19 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/myList"
+    <RelativeLayout
+        android:id="@+id/container_lists"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar">
 
-    </android.support.v7.widget.RecyclerView>
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/myList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>-->
+
+    </RelativeLayout>
 
 </RelativeLayout>
