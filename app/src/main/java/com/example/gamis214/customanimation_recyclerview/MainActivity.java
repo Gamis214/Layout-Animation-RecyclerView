@@ -115,13 +115,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int animation = 0;
         switch (type){
             case FALL_DOWN:
-                animation = R.anim.layout_animation_fall_down;
+                if(isShowInList){
+                    animation = R.anim.layout_animation_fall_down;
+                }else{
+                    animation = R.anim.grid_layout_animation_fall_down;
+                }
                 break;
             case SLIDE_FROM_RIGHT:
-                animation = R.anim.layout_animation_slide_from_right;
+                if(isShowInList){
+                    animation = R.anim.layout_animation_slide_from_right;
+                }else{
+                    animation = R.anim.grid_layout_animation_from_right;
+                }
                 break;
             case SLIDE_FROM_BOTTOM:
-                animation = R.anim.layout_animation_slide_from_bottom;
+                if(isShowInList){
+                    animation = R.anim.layout_animation_slide_from_bottom;
+                }else{
+                    animation = R.anim.grid_layout_animation_from_bottom;
+                }
                 break;
         }
 
